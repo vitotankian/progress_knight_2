@@ -517,7 +517,7 @@ function getHappiness() {
     var butlerEffect = getBindedItemEffect("Butler")
 	var mindseizeEffect = getBindedTaskEffect("Mind Seize")
 	var multiverseFragment = getBindedItemEffect("Multiverse Fragment")
-    var happiness = (meditationEffect() * butlerEffect() / mindseizeEffect() * multiverseFragment() *  gameData.currentProperty.getEffect()) * 100
+    var happiness = (meditationEffect() * butlerEffect() / mindseizeEffect() * multiverseFragment() *  gameData.currentProperty.getEffect()) * 10
     return happiness
 }
 
