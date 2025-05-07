@@ -568,7 +568,7 @@ function getGameSpeed() {
 	var temporalDimension = gameData.taskData["Temporal Dimension"]
 	var timeLoop = gameData.taskData["Time Loop"]
     var timeWarpingSpeed = gameData.timeWarpingEnabled ? timeWarping.getEffect() + temporalDimension.getEffect() * timeLoop.getEffect() : 1
-    var gameSpeed = baseGameSpeed * +!gameData.paused * +isAlive() * timeWarpingSpeed
+    var gameSpeed = (baseGameSpeed * +!gameData.paused * +isAlive() * timeWarpingSpeed) * 10
     return gameSpeed
 }
 
