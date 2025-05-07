@@ -34,7 +34,7 @@ const updateSpeed = 20
 
 const baseLifespan = 365 * 70
 
-const baseGameSpeed = 5000
+const baseGameSpeed = 500
 
 const permanentUnlocks = ["Scheduling", "Shop", "Automation", "Quick task display"]
 
@@ -494,7 +494,7 @@ function setCustomEffects() {
 
     var timeWarping = gameData.taskData["Time Warping"]
     timeWarping.getEffect = function() {
-        var multiplier = 1 + getBaseLog(13, timeWarping.level + 1) 
+        var multiplier = 10 + getBaseLog(13, timeWarping.level + 1) 
         return multiplier
     }
 
