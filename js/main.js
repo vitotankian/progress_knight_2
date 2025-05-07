@@ -30,7 +30,7 @@ var skillWithLowestMaxXp = null
 const autoPromoteElement = document.getElementById("autoPromote")
 const autoLearnElement = document.getElementById("autoLearn")
 
-const updateSpeed = 40
+const updateSpeed = 50
 
 const baseLifespan = 365 * 70
 
