@@ -550,14 +550,14 @@ function getEvilGain() {
 	var absoluteWish = gameData.taskData ["Absolute Wish"]
 	var oblivionEmbodiment = gameData.taskData ["Void Embodiment"]
 	var yingYang = gameData.taskData ["Yin Yang"]
-    var evil = evilControl.getEffect() * bloodMeditation.getEffect() * absoluteWish.getEffect() * oblivionEmbodiment.getEffect() * yingYang.getEffect()
+    var evil = evilControl.getEffect() * bloodMeditation.getEffect() * absoluteWish.getEffect() * oblivionEmbodiment.getEffect() * yingYang.getEffect() * 100
     return evil
 }
 
 function getEssenceGain() {
     var essenceControl = gameData.taskData["Yin Yang"]
 	var essenceCollector = gameData.taskData["Essence Collector"]
-    var essence = essenceControl.getEffect() * essenceCollector.getEffect() * 10
+    var essence = essenceControl.getEffect() * essenceCollector.getEffect() * 100
     return essence
 	
 }
