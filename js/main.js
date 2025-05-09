@@ -557,7 +557,7 @@ function getEvilGain() {
 function getEssenceGain() {
     var essenceControl = gameData.taskData["Yin Yang"]
 	var essenceCollector = gameData.taskData["Essence Collector"]
-    var essence = essenceControl.getEffect() * essenceCollector.getEffect()
+    var essence = essenceControl.getEffect() * essenceCollector.getEffect() * 2
     return essence
 	
 }
