@@ -494,7 +494,7 @@ function setCustomEffects() {
 
     var timeWarping = gameData.taskData["Time Warping"]
     timeWarping.getEffect = function() {
-        var multiplier = (1 + getBaseLog(13, timeWarping.level + 1)) * 50
+        var multiplier = (1 + getBaseLog(13, timeWarping.level + 1)) * 100
         return multiplier
     }
 
@@ -517,7 +517,7 @@ function getHappiness() {
     var butlerEffect = getBindedItemEffect("Butler")
 	var mindseizeEffect = getBindedTaskEffect("Mind Seize")
 	var multiverseFragment = getBindedItemEffect("Multiverse Fragment")
-    var happiness = (meditationEffect() * butlerEffect() / mindseizeEffect() * multiverseFragment() *  gameData.currentProperty.getEffect()) * 100
+    var happiness = (meditationEffect() * butlerEffect() / mindseizeEffect() * multiverseFragment() *  gameData.currentProperty.getEffect()) * 1000
     return happiness
 }
 
@@ -557,7 +557,7 @@ function getEvilGain() {
 function getEssenceGain() {
     var essenceControl = gameData.taskData["Yin Yang"]
 	var essenceCollector = gameData.taskData["Essence Collector"]
-    var essence = essenceControl.getEffect() * essenceCollector.getEffect() * 2
+    var essence = essenceControl.getEffect() * essenceCollector.getEffect() * 10
     return essence
 	
 }
